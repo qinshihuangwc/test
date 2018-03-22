@@ -9,6 +9,13 @@ function drag(obj){
         var disX = e.clientX - obj.offsetLeft;
         var disY = e.clientY - obj.offsetTop;
 
+        document.onmousemove = function(e){
+
+            
+        }
+        document.onmouseup = function () {
+
+        }
 
     }
 }
