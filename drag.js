@@ -11,7 +11,8 @@ function drag(obj){
 
         document.onmousemove = function(e){
 
-            
+            obj.style.left = e.clientX - disX + 'px';
+            obj.style.top = e.clientY - disY + 'px';
         }
         document.onmouseup = function () {
 
