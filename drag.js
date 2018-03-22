@@ -2,7 +2,10 @@
  * Created by x1c on 2018/3/22.
  */
 
-function drag(obj){
+function drag(id){
+    var obj = document.getElementById(id);
+    var disX = 0;
+    var disY = 0;
 
     obj.onmousedown = function(e){
         var e = e || window.event;
@@ -16,8 +19,9 @@ function drag(obj){
 
         }
         document.onmouseup = function () {
-
+            document.onmousemove = null;
+            document.onmouseup = null;
         }
-
     }
+    return false;
 }
